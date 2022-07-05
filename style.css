@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+	background-color: #29323C;
+}
+
+a {
+    text-decoration: none;
+	color: white;
+}
+
+section {
+    position: sticky;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+P {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.logo {
+	max-width: 90px;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1800px;
+	padding: 0 40px;
+}
+
+#header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+}
+#header .nav-list ul li {
+    display: inline-block;
+}
+#header .nav-list ul li a {
+    font-size: 2rem;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+/* home */
+
+#home .home {
+	max-width: 1400px;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+#home .right-column {
+	width: 43%;
+}
+
+#home .right-column .home-image {
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+}
+#home .right-column .home-image::after {
+	content: '';
+	position: absolute;
+	left: 32px;
+	top: 25px;
+	height: 93%;
+	width: 92%;
+	border: 15px solid rgb(255, 166, 0);
+	z-index: -1;
+}
+
+/* Titles */
+#home .title{
+    display: block;
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 7rem;
+    font-weight: 700;
+    position: relative;
+}
+
+#home .media-title{
+    display: block;
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 10rem;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#home .orange-title{
+    display: block;
+    width: fit-content;
+    color: #FFA500;
+    font-size: 10rem;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.scrl-button {
+    font-size: 2.5rem;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about */
+
+#about .about {
+	max-width: 1400px;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+
+#about .right-column .about-image1{
+	height: 100%;
+	width: 80%;
+	position: relative;
+    padding-left: 60px;
+
+}
+#about .right-column .about-image2{
+	height: 100%;
+	position: relative;
+    margin-left: 200px;
+    bottom: 50px;
+    z-index: -1000;
+}
+
+#about .about-title {
+    font-size: 10rem;
+    color:#FFFFFF;
+}
+
+#about .about-title span{
+    font-size: 10rem;
+    color:#FFA500;
+}
+
+#about .about-text  p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+/* skills */
+
+#skills .skills {
+	max-width: 1400px;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+
+#skills .right-column {
+	width: 43%;
+}
+
+#skills .skills-title {
+    font-size: 10rem;
+    color:#FFFFFF;
+}
+
+#skills .skills-text  p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+/* squares */
+/* design */
+#skills .design-square {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    margin: 100px 150px 0 150px;
+}
+
+#skills .design-square h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    border-radius: 30px;
+    border: 6px solid #FFA500;
+    padding: 15px;
+    width: 200px;
+    height: 150px;
+}
+
+/* dev */
+
+#skills .dev-square {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    margin: 100px 0 50px 0;
+}
+
+#skills .dev-square h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    border-radius: 30px;
+    border: 6px solid #FFA500;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+/* research */
+
+#skills .research-square {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    margin: 100px 150px 0 150px;
+}
+
+#skills .research-square h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    border-radius: 30px;
+    border: 6px solid #FFA500;
+    padding: 15px;
+    width: 200px;
+    height: 150px;
+}
+
+/* contact */
+
+#contact .contact {
+	max-width: 1400px;
+	margin: 0 auto;
+    justify-content: space-between;
+}
+
+#contact .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact .contact h1{
+	font-size: 10rem;
+    display: block;
+}
+
+#contact .contact h1 span{
+	font-size: 10rem;
+    color:#FFA500
+}
+
+#contact .contact-title {
+    font-size: 10rem;
+    color:#FFFFFF;
+}
+
+#contact .contact-text {
+    max-width: 50%;
+}
+
+#contact .contact-text  p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+#contact .contact-phone {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+#contact .contact-phone h2{
+    color: #FFA500;
+    font-size: 2rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#contact .contact-mail {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+#contact .contact-mail h2{
+    color: #FFA500;
+    font-size: 2rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#contact .contact-social {
+    position: relative;
+    border-radius: 30px;
+    border: 6px solid #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+#contact .contact-social h2{
+    color: #FFA500;
+    font-size: 2rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
