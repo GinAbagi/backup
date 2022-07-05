@@ -65,7 +65,7 @@ P {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 1800px;
+	max-width: 1300px;
 	padding: 0 40px;
 }
 
@@ -80,7 +80,7 @@ P {
     display: inline-block;
 }
 #header .nav-list ul li a {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 30px;
     text-transform: uppercase;
 }
@@ -88,12 +88,12 @@ P {
 /* home */
 
 #home .home {
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: 0 auto;
     justify-content: space-between;
 }
 #home .right-column {
-	width: 43%;
+	width: 40%;
 }
 
 #home .right-column .home-image {
@@ -107,10 +107,16 @@ P {
 	position: absolute;
 	left: 32px;
 	top: 25px;
-	height: 93%;
-	width: 92%;
+	height: 92%;
+	width: 91%;
 	border: 15px solid rgb(255, 166, 0);
 	z-index: -1;
+
+}
+
+#home .right-column .home-image :hover {
+    transform: scale(1.03);
+    transition: 0.6s ease-in-out;
 }
 
 /* Titles */
@@ -118,7 +124,7 @@ P {
     display: block;
     width: fit-content;
     color: #FFFFFF;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 700;
     position: relative;
 }
@@ -127,7 +133,7 @@ P {
     display: block;
     width: fit-content;
     color: #FFFFFF;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 900;
     position: relative;
     text-transform: uppercase;
@@ -145,13 +151,14 @@ P {
 }
 
 .scrl-button {
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-bottom: 1px solid #FFFFFF;
 }
 
 footer {
     width: 100%;
     display: flex;
+    min-height: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -159,14 +166,14 @@ footer {
 /* about */
 
 #about .about {
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: 0 auto;
     justify-content: space-between;
 }
 
 #about .right-column .about-image1{
 	height: 100%;
-	width: 80%;
+	width: 70%;
 	position: relative;
     padding-left: 60px;
 
@@ -179,41 +186,57 @@ footer {
     z-index: -1000;
 }
 
+#about .right-column .about-images {
+    position:absolute
+}
+
+#about .left-column {
+    max-width: 50%;
+}
+
 #about .about-title {
-    font-size: 10rem;
+    font-size: 8rem;
     color:#FFFFFF;
 }
 
 #about .about-title span{
-    font-size: 10rem;
+    font-size: 8rem;
     color:#FFA500;
 }
 
 #about .about-text  p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+#about .cv-button {
+    font-size: 2rem;
+    border-bottom: 1px solid #FFFFFF;
+
 }
 
 /* skills */
 
 #skills .skills {
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: 0 auto;
     justify-content: space-between;
 }
 
 #skills .right-column {
-	width: 43%;
+	width: 45%;
 }
 
 #skills .skills-title {
-    font-size: 10rem;
+    font-size: 8rem;
     color:#FFFFFF;
 }
 
 #skills .skills-text  p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.3;
+    padding-top: 20px;
 }
 
 /* squares */
@@ -221,21 +244,21 @@ footer {
 #skills .design-square {
     position: relative;
     border-radius: 30px;
-    border: 6px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
-    height: 150px;
-    margin: 100px 150px 0 150px;
+    width: 180px;
+    height: 130px;
+    margin: 100px 20px 0 350px;
 }
 
 #skills .design-square h2{
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 30px;
-    border: 6px solid #FFA500;
+    border: 4px solid #FFA500;
     padding: 15px;
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 130px;
 }
 
 /* dev */
@@ -245,19 +268,19 @@ footer {
     border-radius: 30px;
     border: 6px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
-    height: 150px;
-    margin: 100px 0 50px 0;
+    width: 180px;
+    height: 130px;
+    margin: 100px 0 50px 100px;
 }
 
 #skills .dev-square h2{
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 30px;
-    border: 6px solid #FFA500;
+    border: 4px solid #FFA500;
     padding: 10px;
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 130px;
 }
 
 /* research */
@@ -265,27 +288,27 @@ footer {
 #skills .research-square {
     position: relative;
     border-radius: 30px;
-    border: 6px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
-    height: 150px;
-    margin: 100px 150px 0 150px;
+    width: 180px;
+    height: 130px;
+    margin: 100px 20px 0 350px;
 }
 
 #skills .research-square h2{
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 30px;
-    border: 6px solid #FFA500;
+    border: 4px solid #FFA500;
     padding: 15px;
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 130px;
 }
 
 /* contact */
 
 #contact .contact {
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: 0 auto;
     justify-content: space-between;
 }
@@ -303,12 +326,12 @@ footer {
 }
 
 #contact .contact h1 span{
-	font-size: 10rem;
+	font-size: 8rem;
     color:#FFA500
 }
 
 #contact .contact-title {
-    font-size: 10rem;
+    font-size: 8rem;
     color:#FFFFFF;
 }
 
@@ -317,16 +340,16 @@ footer {
 }
 
 #contact .contact-text  p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.3;
 }
 
 #contact .contact-phone {
     position: relative;
     border-radius: 30px;
-    border: 6px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 
@@ -343,9 +366,9 @@ footer {
 #contact .contact-mail {
     position: relative;
     border-radius: 30px;
-    border: 6px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 
@@ -362,9 +385,9 @@ footer {
 #contact .contact-social {
     position: relative;
     border-radius: 30px;
-    border: 6px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     padding: 10px;
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 

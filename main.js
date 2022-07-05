@@ -1,11 +1,9 @@
-
+// homepage animations 
 // body 
-gsap.from('.title', { 
-    opacity: 0, 
-    duration: 0.7,
-    y: -50, 
-    ease: 'Power2.easeOutIn',
-    delay: 0.3
+gsap.from('.title', 1.3, { 
+    x: -200,
+    opacity: 0,
+    delay: 0.1
 });
 
 gsap.from('.media-title', { 
@@ -29,7 +27,6 @@ gsap.from('.home-image', {
     opacity: 0,
     x: 100,
     ease: 'Power1.easeOutIn',
-    delay: 0.3,
 });
 
 gsap.from('.scrl-button', {
@@ -49,9 +46,8 @@ gsap.from('.header', {
     delay: 1
 });
 
-gsap.from('.nav-list', {
-    duration: 1,
+gsap.from('.nav-list ul li', 1, {
+    y: -100,
     opacity: 0,
-    ease: 'Power2.easeOutIn',
-    delay: 1
+    stagger: .2
 });
