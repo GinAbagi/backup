@@ -1,7 +1,19 @@
+gsap.registerPlugin(ScrollTrigger);
+// scroll trigger animation
+gsap.utils.toArray('.section').forEach(section => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: 'top top',
+    pin: true,
+    pinSpacing: false
+  });
+});
+
+
 // homepage animations 
 // body 
 gsap.from('.title', 1.3, { 
-    x: -200,
+    x: -80,
     opacity: 0,
     delay: 0.1
 });
@@ -51,3 +63,6 @@ gsap.from('.nav-list ul li', 1, {
     opacity: 0,
     stagger: .2
 });
+
+// test
+

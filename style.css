@@ -18,9 +18,29 @@ a {
 	color: white;
 }
 
+/* adjusted for scrolltrigger effect */
+
 section {
-    position: sticky;
+    background-color: #29323C;
 }
+
+section.one{
+    background-color: #29323C;
+}
+
+section.two {
+   background-color: #1e252c;
+}
+
+section.three {
+    background-color: #29323C;
+ }
+
+ section.four {
+    background-color: #1e252c;
+ }
+
+ /* end adjustment */
 
 .container {
     min-height: 100vh;
