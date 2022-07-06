@@ -1,4 +1,4 @@
-// scroll trigger animation
+// scroll trigger animation // now switched off 
 
 // gsap.registerPlugin(ScrollTrigger);
 // // scroll trigger animation
@@ -53,7 +53,7 @@ gsap.from('.scrl-button', {
 });
 
 
-// header
+// header animation
 gsap.from('.header', {
     duration: 1,
     opacity: 0,
@@ -67,7 +67,7 @@ gsap.from('.nav-list ul li', 1, {
     stagger: .2
 });
 
-// easy fade in of the main page
+// easy fade in of the main page (home)
 
 const animationEnter = (container) => {
     return gsap.from(container, { autoAlpha: 0, duration: 2, clearProps: 'all', ease: 'none'});
@@ -83,3 +83,21 @@ barba.init({
         }
     ]
 })
+
+// scrolltrigger moves in text and pictures in about section
+let tl = gsap.timeline({
+
+    scrollTrigger: {
+      trigger: "#about",
+      pin:true,
+      start: "top top",
+      end: "+=150%",
+      scrub: 1,
+    },
+    defaults:{duration:1, ease:'none'}
+  });
+  tl.from('.fromLeft',{ x:-400, opacity: 0})
+  tl.to('.fromLeft',{width:'100%', height: '90%'})
+  tl.from('.fromRight',{ x:500, opacity: 0})
+  tl.to('.fromRight',{width:'100%', height: '100%'})
+  tl.to({},{duration:0.8})

@@ -13,6 +13,10 @@ html {
 	background-color: #29323C;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 	color: white;
@@ -196,14 +200,15 @@ footer {
 	width: 70%;
 	position: relative;
     padding-left: 60px;
-
+    z-index: 2;
 }
 #about .right-column .about-image2{
 	height: 100%;
 	position: relative;
     margin-left: 200px;
     bottom: 50px;
-    z-index: -1000;
+    z-index: 1;
+    background-attachment: fixed;
 }
 
 #about .right-column .about-images {
@@ -271,6 +276,12 @@ footer {
     margin: 100px 20px 0 350px;
 }
 
+#skills .design-square :hover {
+    background-color: #FFA500;
+    color: #1e252c;
+    transition: 0.3s ease-in;
+}
+
 #skills .design-square h2{
     color: #FFFFFF;
     font-size: 2rem;
@@ -293,6 +304,12 @@ footer {
     margin: 100px 0 50px 100px;
 }
 
+#skills .dev-square :hover {
+    background-color: #FFA500;
+    color: #1e252c;
+    transition: 0.3s ease-in;
+}
+
 #skills .dev-square h2{
     color: #FFFFFF;
     font-size: 2rem;
@@ -313,6 +330,12 @@ footer {
     width: 180px;
     height: 130px;
     margin: 100px 20px 0 350px;
+}
+
+#skills .research-square :hover {
+    background-color: #FFA500;
+    color: #1e252c;
+    transition: 0.3s ease-in;
 }
 
 #skills .research-square h2{
@@ -364,54 +387,33 @@ footer {
     line-height: 1.3;
 }
 
-#contact .contact-phone {
+#contact .channels {
     position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#contact .social {
+    position: relative;
+    display: inline-block;
     border-radius: 30px;
     border: 4px solid #FFFFFF;
     padding: 10px;
     width: 150px;
     height: 100px;
+    margin: 50px 20px;
 }
 
-#contact .contact-phone h2{
-    color: #FFA500;
-    font-size: 2rem;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-}
-
-#contact .contact-mail {
-    position: relative;
-    border-radius: 30px;
-    border: 4px solid #FFFFFF;
-    padding: 10px;
+#contact .social :hover {
+    border: 4px solid orange;
+    color: #ffffff;
     width: 150px;
     height: 100px;
-}
-
-#contact .contact-mail h2{
-    color: #FFA500;
-    font-size: 2rem;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-}
-
-#contact .contact-social {
-    position: relative;
     border-radius: 30px;
-    border: 4px solid #FFFFFF;
-    padding: 10px;
-    width: 150px;
-    height: 100px;
+    position: relative;
 }
 
-#contact .contact-social h2{
+#contact .social h2{
     color: #FFA500;
     font-size: 2rem;
     align-items:center;
