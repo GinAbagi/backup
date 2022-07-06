@@ -1,21 +1,23 @@
-gsap.registerPlugin(ScrollTrigger);
 // scroll trigger animation
-gsap.utils.toArray('.section').forEach(section => {
-  ScrollTrigger.create({
-    trigger: section,
-    start: 'top top',
-    pin: true,
-    pinSpacing: false
-  });
-});
+
+// gsap.registerPlugin(ScrollTrigger);
+// // scroll trigger animation
+// gsap.utils.toArray('.section').forEach(section => {
+//   ScrollTrigger.create({
+//     trigger: section,
+//     start: 'top top',
+//     pin: true,
+//     pinSpacing: false
+//   });
+// });
 
 
 // homepage animations 
 // body 
-gsap.from('.title', 1.3, { 
-    x: -80,
+gsap.from('.title', { 
+    y: -50,
     opacity: 0,
-    delay: 0.1
+    delay: 0.3
 });
 
 gsap.from('.media-title', { 
@@ -35,10 +37,11 @@ gsap.from('.orange-title', {
 });
 
 gsap.from('.home-image', {
-    duration: 0.7,
+    duration: 1,
     opacity: 0,
     x: 100,
-    ease: 'Power1.easeOutIn',
+    ease: 'Power2.easeOutIn',
+    delay: 0.5
 });
 
 gsap.from('.scrl-button', {
@@ -64,5 +67,19 @@ gsap.from('.nav-list ul li', 1, {
     stagger: .2
 });
 
-// test
+// easy fade in of the main page
 
+const animationEnter = (container) => {
+    return gsap.from(container, { autoAlpha: 0, duration: 2, clearProps: 'all', ease: 'none'});
+}
+
+
+barba.init({
+    transitions: [
+        {
+            once({next}){
+                animationEnter(next.container);
+            }
+        }
+    ]
+})
