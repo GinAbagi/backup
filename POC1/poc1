@@ -1,1 +1,4 @@
+Voor de eerst POC heb ik gewerkt met een scroll animatie van GSAP. Deze animatie wordt aangeroepen door een scroll trigger tijdens het scrollen. De animatie die tijdens het scrollen actief wordt zorgt er voor dat de volgende section op de website via een y-as overlapping wordt laten zien. 
+
+Voor het uitwerken van deze animatie heb ik html, css, en GSAP gebruikt. De GSAP scrolltrigger library heb ik ingeladen via een <script> link. 
 
