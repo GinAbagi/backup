@@ -1,0 +1,1 @@
+Met deze animatie zorg ik voor een scrolltrigger animatie waarbij de volgende pagina overlapt tijdens een scroll. 
