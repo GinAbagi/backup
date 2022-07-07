@@ -1,0 +1,1 @@
+Deze transition animatie is gemaakt met BarbaJS en GSAP. Er komt een transition slide vanuit de rechterkant met tekst en de header die mee navigeert bij het klikken op de navigation bar. 
