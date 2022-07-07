@@ -1,1 +1,1 @@
-
+Voor de derde POC heb ik een tweede overganganimatie gemaakt met BarbaJS en GSAP. Deze overgangsanimatie wordt in gang gezet op het moment van navigeren in de header. Op het moment van navigeren, komt er een slide-in/slide-out animatie vanuit de rechter kant, waarna de items op het scherm vanuit de de y-as op rechts een fade in krijgen. 
