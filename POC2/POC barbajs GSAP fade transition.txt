@@ -1,0 +1,1 @@
+Deze POC is gemaakt met Barba.js en GSAP. Het zorgt voor een fade-in en fade-out bij het navigeren naar een andere pagina. 
