@@ -1,0 +1,1 @@
+Voor deze POC heb ik een scroll trigger met een move in animatie gemaakt. Op de scroll komt er in de content section een stuk tekst met titel en een plaatje ingeschoven. Dit gebeurt aan zowel de linker als de rechter kant. 
