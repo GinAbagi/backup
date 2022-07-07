@@ -1,1 +1,4 @@
+Voor de vierde POC heb ik gekeken naar het creëren van een parallax effect. Er zijn verschillende manieren binnen CSS, Javascript en libraries om een parallax effect te realiseren. Ik heb hiervoor uiteindelijk twee soorten parallax effecten uitgewerkt. Een parallax effect heb ik uitgewerkt in Javascript, waarbij ik de background image langzamer laat bewegen tijdens de scroll, om zo een parallax effect te creëren. 
+
+Voor het tweede parallax effect heb ik de background image op fixed gezet waardoor de <div> erna overlapt tijdens het scrollen. Dit heb ik uitgevoerd door background-attachement: fixed in CSS. Beide effecten geven een vrij simpele parallax effect. Dit is nog verder uit te breiden door te werken met GSAP. Hiervoor is een image nodig met meerdere layers. In deze tijd was dit niet te realiseren, dus heb ik voor deze twee opties gekozen. 
 
