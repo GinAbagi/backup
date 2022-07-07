@@ -1,1 +1,5 @@
+Voor de tweede POC heb ik gekeken naar een overgangsanimatie. Hiervoor heb ik gebruik gemaakt van BarbaJs en JavaScript. Voor deze POC heb ik een overgangsanimatie gemaakt bij het navigeren naar een andere pagina. Dit is een Fade-in/Fade-out effect wat zorgt voor een soepele overgangsanimatie. 
 
+Om er voor te zorgen dat BarbaJs en GSAP goed samenwerken heb beide libraries geïmporteerd en de mark-up documentatie doorgenomen. De Barba-wrapper werd niet herkend, maar dit heb ik daarna doormiddel van de documentatie kunnen oplossen. 
+
+Na het plaatsen van de content in de barba-container heb ik de animaties kunnen maken in het script. 
