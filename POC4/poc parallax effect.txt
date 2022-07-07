@@ -1,0 +1,5 @@
+Met deze POC heb ik een parallax effect gecreeërd op twee manieren. 
+
+De home div heb ik een parallax effect gegeven door de background langzamer te laten bewegen doormiddel van een javaScript function. 
+
+De content div heb ik een parallax effect gegeven door de background image fixed te houden in CSS. 
